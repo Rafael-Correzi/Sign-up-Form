@@ -2,38 +2,88 @@
   Reset CSS de Josh Comeau
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
+
 * {
   margin: 0;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-img, picture, video, canvas, svg {
+
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
+
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
-#root, #__next {
+
+#root,
+#__next {
   isolation: isolate;
 }
 
 /* Meu CSS */
 
-img {
+.form-photo {
+  position: relative;
   height: 100vh;
+  width: 480px;
+}
+
+.form-photo img {
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.form-photo-caption {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.form-photo-caption a {
+  color: #ddd;
 }
