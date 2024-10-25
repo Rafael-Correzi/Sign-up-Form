@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="container">
-    <figure class="form-photo">
-      <img src="marino-linic-resized.jpg" alt="Uma casa com uma montanha no plano de fundo">
-      <figcaption class="form-photo-caption"> 
-    Foto de 
-      <a href="https://unsplash.com/@marinolinic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-    Marino Linic </a> no 
-      <a href="https://unsplash.com/photos/a-house-with-a-mountain-in-the-background-2BEAqN721hU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-    Unsplash</a>
-      </figcaption>
-    </figure>
-    <div class="conteudo">
-      <h1>Esse serviço não é real! Você precisa disso na sua vida para te ajudar a conquistar seus maiores sonhos.
-        Cadastre-se <em>agora</em> para começar.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-img">
+      <figure class="form-photo">
+        <img
+          class="montanha"
+          src="marino-linic-resized.jpg"
+          alt="Uma casa com uma montanha no plano de fundo"
+        />
 
+        <figcaption class="form-photo-caption">
+          Foto de
+          <a
+            href="https://unsplash.com/@marinolinic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >
+            Marino Linic
+          </a>
+          no
+          <a
+            href="https://unsplash.com/photos/a-house-with-a-mountain-in-the-background-2BEAqN721hU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >
+            Unsplash</a
+          >
+        </figcaption>
+      </figure>
+      <a class="container-logo" href="#">
+        <img class="logo" src="odin-lined.png" alt="Logo do serviço" />
+        <span>ODIN</span>
+      </a>
+    </div>
+    <div class="container-conteudo">
+      <h1>
+        Esse serviço não é real! Você precisa disso na sua vida para te ajudar a
+        conquistar seus maiores sonhos. Cadastre-se <em>agora</em> para começar.
         Você <em>sabe</em> que é isso que você quer.
       </h1>
       <form action="" method="post">
         <div>
           <h2>Vamos lá</h2>
           <ul>
-            <li><label for="">NOME</label><input type="text"></li>
-            <li><label for="">SOBRENOME</label><input type="text"></li>
-            <li><label for="">EMAIL</label><input type="email"></li>
-            <li><label for="">CELULAR</label><input type="tel"></li>
-            <li><label for="">SENHA</label><input type="password"></li>
-            <li><label for="">CONFIRMAR SENHA</label><input type="password"></li>
+            <li><label for="">NOME</label><input type="text" /></li>
+            <li><label for="">SOBRENOME</label><input type="text" /></li>
+            <li><label for="">EMAIL</label><input type="email" /></li>
+            <li><label for="">CELULAR</label><input type="tel" /></li>
+            <li><label for="">SENHA</label><input type="password" /></li>
+            <li>
+              <label for="">CONFIRMAR SENHA</label><input type="password" />
+            </li>
           </ul>
         </div>
         <button type="submit">Criar Conta</button>
       </form>
       <p>Já possui uma conta? <a href="#">Entrar</a></p>
     </div>
-  </div>
-</body>
+  </body>
 </html>

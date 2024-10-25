@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'norsebold';
-  src: url('norse-bold-webfont.woff2') format('woff2');
+  src: url('fonts/norse-bold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 
@@ -71,20 +71,49 @@ h6 {
 
 /* Meu CSS */
 
-.container {
+body {
   display: flex;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.form-photo {
+.container-img {
   position: relative;
   height: 100vh;
   width: 600px;
 }
 
-.form-photo img {
+.form-photo {
+  height: 100%;
+  width: 100%;
+}
+
+.form-photo .montanha {
   height: 100%;
   object-fit: cover;
-  object-position: right;
+  object-position: left;
+
+}
+
+.container-logo {
+  display: flex;
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  top: 230px;
+  background-color: #3338;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  height: 140px;
+}
+
+.container-logo span {
+  font-family: "norsebold";
+  font-size: 94px;
 }
 
 .form-photo-caption {
