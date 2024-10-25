@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('norse-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /*
   Reset CSS de Josh Comeau
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -63,10 +71,13 @@ h6 {
 
 /* Meu CSS */
 
+.container {
+}
+
 .form-photo {
   position: relative;
   height: 100vh;
-  width: 480px;
+  width: 600px;
 }
 
 .form-photo img {
