@@ -107,7 +107,7 @@ body {
   position: absolute;
   height: 160px;
   width: 100%;
-  top: 230px;
+  top: 200px;
   background-color: #3338;
   align-items: center;
   justify-content: center;
@@ -142,7 +142,6 @@ body {
   align-self: stretch;
   flex: 1;
   margin-top: 150px;
-  padding-left: 60px;
 }
 
 h1 {
@@ -150,4 +149,20 @@ h1 {
   font-size: 2.2rem;
   line-height: 1.2;
   letter-spacing: 0.02rem;
+  margin-left: 60px;
+}
+
+form {
+  margin-top: 50px;
+  background-color: #FFF;
+  height: 35%;
+  box-shadow: 8px 3px 8px #bbb;
+}
+
+form>div {
+  margin-left: 60px;
+}
+
+button {
+  margin-left: 60px;
 }
