@@ -6,27 +6,6 @@
 
 }
 
-@font-face {
-  font-family: 'montserrat';
-  src: url('fonts/montserratalternates-medium-webfont.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-
-}
-
-
-
-
-@font-face {
-  font-family: 'montserrat';
-  src: url('fonts/montserratalternates-mediumitalic-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: italic;
-
-}
-
-
-
 
 @font-face {
   font-family: 'montserrat';
@@ -175,7 +154,7 @@ body {
   margin-top: 100px;
 }
 
-h1,h2,form,label,button {
+h1,h2,form,label,button,.possui {
   font-family: "montserrat";
   font-weight: 500;
 }
@@ -183,7 +162,7 @@ h1,h2,form,label,button {
 h1 {
   white-space: pre-line;
   font-size: 2.5rem;
-  line-height: 1.2;
+  line-height: 1.3;
   letter-spacing: 0.05rem;
   margin-left: 70px;
 }
@@ -196,7 +175,7 @@ h2 {
 }
 
 form>div {
-  margin-top: 60px;
+  margin-top: 50px;
   background-color: #FFF;
   height: 310px;
   box-shadow: 8px 3px 8px #bbb;
@@ -248,4 +227,17 @@ form button {
   border-radius: 9px;
   background-color: #596D48;
   color: #FFF;
+}
+
+.possui {
+  font-weight: normal;
+  margin-left: 70px;
+  margin-top: 30px;
+  font-size: 1.7rem;
+}
+
+.possui a {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: 900;
 }
