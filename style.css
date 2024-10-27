@@ -207,7 +207,12 @@ form input {
 form input:focus {
   border: 2px solid blue;
   outline: none;
-  box-shadow: 4px 2px 4px lightblue;
+  box-shadow: 2px 1px 2px lightblue;
+}
+
+form input[type="password"]:invalid {
+  border: 2px solid red;
+  outline: none;
 }
 
 form li {

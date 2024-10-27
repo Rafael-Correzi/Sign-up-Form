@@ -51,8 +51,8 @@
             <li><label for="">SOBRENOME *</label><input type="text" required /></li>
             <li><label for="">EMAIL *</label><input type="email" required /></li>
             <li><label for="">CELULAR</label><input type="tel" /></li>
-            <li><label for="">SENHA *</label><input type="password" required /></li>
-            <li><label for="">CONFIRMAR SENHA *</label><input type="password" required /></li>
+            <li><label for="">SENHA *</label><input type="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/></li>
+            <li><label for="">CONFIRMAR SENHA *</label><input type="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" /></li>
           </ul>
         </div>
         <button type="submit">Criar Conta</button>
