@@ -36,26 +36,31 @@
       </a>
     </div>
     <div class="container-conteudo">
-      <h1>
-        Venha nos visitar! Descubra o melhor que o mundo tem a oferecer
-        com a ajuda da Visitmos e realize o seu maior sonho!
-        Cadastre-se <em>agora</em> para começar.
+      <div class="texto">
+        <h1>Venha nos visitar! Descubra o melhor que o mundo tem a oferecer</h1>
+        <h1>com a ajuda da Visitmos e realize o seu maior sonho!</h1>
+        <h1>Cadastre-se <em>agora</em> para começar.</h1>
 
-        Você <em>sabe</em> que seu lugar é aqui.
-      </h1>
+        <h1>Você <em>sabe</em> que seu lugar é aqui.</h1>
+      </div> 
       <form action="" method="post">
         <div>
           <h2>Vamos lá!</h2>
           <ul>
             <li><label for="">NOME *</label><input type="text" required /></li>
-            <li><label for="">SOBRENOME *</label><input type="text" required /></li>
             <li><label for="">EMAIL *</label><input type="email" required /></li>
+            <li class="senha"><label for="">SENHA *</label><input type="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/></li>
+            <p class="requerimentos">* Senhas precisam conter 8 caracteres,
+                                     pelo menos 1 número e 1 letra.
+            </p>
             <li><label for="">CELULAR</label><input type="tel" /></li>
-            <li><label for="">SENHA *</label><input type="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"/></li>
+            <li><label for="">SOBRENOME *</label><input type="text" required /></li>          
             <li><label for="">CONFIRMAR SENHA *</label><input type="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" /></li>
           </ul>
         </div>
+        
         <button type="submit">Criar Conta</button>
+        
       </form>
       <p class="possui">Já possui uma conta? <a href="#">Entrar</a></p>
     </div>
