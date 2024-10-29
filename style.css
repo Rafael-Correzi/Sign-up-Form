@@ -339,6 +339,10 @@ form button {
 
 @media (max-width: 860px) {
 
+  :root {
+    font-size: 8px;
+  }
+
   .container-conteudo {
     text-align: center;
     --largura-li: clamp(140px, 100px + 50vw, 400px);
