@@ -150,6 +150,7 @@ body {
 }
 
 .container-conteudo {
+  --margem: min(6%,70px);
   align-self: stretch;
   flex: 1;
   margin-top: 100px;
@@ -168,7 +169,7 @@ h1 {
   font-size: clamp(2rem, 1.3vw, 2.5rem);
   line-height: 1.4;
   letter-spacing: 0.05rem;
-  margin-left: 70px;
+  margin-left: var(--margem);
 }
 
 h1:last-of-type{
@@ -185,28 +186,36 @@ form>div {
   margin-top: 50px;
   background-color: #FFF;
   height: 310px;
-  box-shadow: 8px 3px 8px #bbb;
+  box-shadow: 0 3px 8px #bbb;
 }
 
 form>div>* {
-  margin-left: 70px;
+  margin-left: var(--margem);
 }
 
 form ul {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 810px;
   list-style-type: none;
   padding: 0;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
 }
 
 form ul .requerimentos {
   position: absolute;
+  bottom: -33px;
   margin-top: -26px;
   white-space: pre-line;
   color: #999;
   
+}
+
+form li, .requerimentos {
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 25px;
+
 }
 
 form label {
@@ -220,7 +229,7 @@ form input {
   border-radius: 6px;
   border-color: #999;
   height: 3.5rem;
-  width: clamp(290px, 20vw, 350px);
+  width: 95%;
   font-size: 1.5rem;
 }
 
@@ -235,13 +244,8 @@ form input[type="password"]:user-invalid {
   outline: none;
 }
 
-form li {
-  margin: 0 clamp(25px, 5vw, 80px) 26px 0;
-
-}
-
 form button {
-  margin-left: 70px;
+  margin-left: var(--margem);
   margin-top: 30px;
   width: 190px;
   height: 55px;
@@ -255,7 +259,7 @@ form button {
 
 .possui {
   font-weight: normal;
-  margin-left: 70px;
+  margin-left: var(--margem);
   margin-top: 30px;
   font-size: 1.7rem;
 }
@@ -281,11 +285,6 @@ form button {
   .form-photo .montanha {
     height: 100%;
   }
-  .container-conteudo {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-  }
 
   .container-logo {
     height: clamp(100px, min(30vw, 25vh), 280px);
@@ -300,6 +299,12 @@ form button {
   
   .logo {
     height: clamp(35px, 13vw, 115px);
+  }
+
+  .container-conteudo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
   }
 
   .texto { 
@@ -322,16 +327,10 @@ form button {
     align-self: stretch;
     order: 1;
   }
-
-  form li {
-    margin: 0 min(calc(-40px + 12vw), 160px) 26px 0;
-  
+  form ul {
+    width:80%;
+    min-width: 800px;
   }
-
-  form input {
-    width: max(240px, 40vw);;
-  }
-
   form button {
     margin-bottom: 25px;
   }
@@ -342,6 +341,7 @@ form button {
 
   .container-conteudo {
     text-align: center;
+    --largura-li: clamp(140px, 100px + 50vw, 400px);
   }
 
   h1, form>div>*, form button, .possui {
@@ -353,31 +353,35 @@ form button {
   }
 
   form ul {
-    columns: 1;
-    -webkit-columns: 1;
-    -moz-columns: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
   
   form>div {
-    height: 550px;
+    height: 560px;
   }
   
   form ul {
-    width: 90%
+    width: 100%;
+    min-width: 0;
   }
 
   form li {
     margin-right: 0;
+    width: var(--largura-li);
   }
   form input {
     width: 100%;
 
   }
-  
   form ul .requerimentos {
-    --shift: calc((90% - 345.56px)*2);
+    white-space: normal;
+    width: var(--largura-li);
+    margin: auto;
     text-align: left;
-    white-space: nowrap;
+    bottom: -10px;
+
   }
   
 }
