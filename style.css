@@ -339,14 +339,6 @@ form button {
 
 @media (max-width: 860px) {
 
-  :root {
-    font-size: 8px;
-  }
-
-  .container-logo span{
-    font-size: clamp(3.3rem, 10vw, 15rem);
-  }
-
   .container-conteudo {
     text-align: center;
     --largura-li: clamp(140px, 100px + 50vw, 400px);
@@ -357,9 +349,13 @@ form button {
   }
 
   h1 {
-    font-size: 2.3rem;
+    font-size: 1.9rem;
   }
 
+  h2 {
+    font-size: 1.9rem;
+    padding: 15px 0;
+  }
   form ul {
     flex-direction: column;
     align-items: center;
@@ -369,7 +365,7 @@ form button {
   }
   
   form>div {
-    height: 560px;
+    height: 565px;
   } 
 
   form li {
