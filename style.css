@@ -360,16 +360,13 @@ form button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+    min-width: 0;
   }
   
   form>div {
     height: 560px;
-  }
-  
-  form ul {
-    width: 100%;
-    min-width: 0;
-  }
+  } 
 
   form li {
     margin-right: 0;
